@@ -1,12 +1,13 @@
 # Dataset
 eraserbenchmark/data
 
-# Backup
-checkpoints/
-lightning_logs/
+# ERASER
+eraserbenchmark/model_components
+eraserbenchmark/pipeline_outputs
 
 # Evaluation Input/Output
 prediction/
+predict_results_claimdiff.json
 output/
 
 # Compiled python modules.
