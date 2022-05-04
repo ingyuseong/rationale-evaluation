@@ -16,6 +16,12 @@ To run this model, we need to first:
 bash evaluate.sh
 ```
 
+### How to evaluate (ERASER)
+0. jsonl_generator -> docs.jsonl(val + test), val.jsonl, test.jsonl (eraser/data)
+1. new_evaluation -> predict_results_claimdiff_val, predict_results_claimdiff_test (./prediction)
+2. predict_results_claimdiff -> test_decoded_generator or pred_to_eval (local) -> test_decoded.jsonl (eraser/output)
+3. Run `evaluate.sh`
+
 ### Reference
 * [ERASER](https://github.com/jayded/eraserbenchmark)
 * [Rough script template, ec2-docker-script](https://github.com/dooking/ec2-docker-script)
