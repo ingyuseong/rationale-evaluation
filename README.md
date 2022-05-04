@@ -17,8 +17,8 @@ bash evaluate.sh
 ```
 
 ### How to evaluate (ERASER)
-0. jsonl_generator -> docs.jsonl(val + test), val.jsonl, test.jsonl (eraser/data)
-1. new_evaluation -> predict_results_claimdiff_val, predict_results_claimdiff_test (./prediction)
+0. jsonl_generator (local) -> docs.jsonl(val + test), val.jsonl, test.jsonl (eraser/data)
+1. new_evaluation (training VM) -> predict_results_claimdiff_val, predict_results_claimdiff_test (./prediction)
 2. predict_results_claimdiff -> test_decoded_generator or pred_to_eval (local) -> test_decoded.jsonl (eraser/output)
 3. Run `evaluate.sh`
 
